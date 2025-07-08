@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+/*Limpando formatações*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Formatações Genéricas*/
+
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --primaria: #BF1B68;
+    --secundaria: #A36CD9;
+    --terciaria: #360A73;
+    --escuro: #100340;
+    --text: #8f8d8d;
+    --fundo: #a36cd94f;
+}
+
+body{
+    background-color: white;
+    color: black;
+}
+
+/*Formatações Menu*/
+
+.menu{
+    position: fixed;
+    background-color: rgba(67, 18, 136, 0.811);
+    width: 100%;
+    top:0;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.itsmenu{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    gap: 1rem;
+}
+
+#log{
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+}
+
+.linkmenu{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+    padding: 0.4rem;
+}
+
+.linkmenu::after{
+    content:'';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primaria), var(--escuro));
+    transition: width 0.5s ease;
+}
+
+.linkmenu:hover::after{
+    width: 100%;
+}
+
+/*Formatações Main/Principal*/
+
+#perfil{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.cabecalho{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#subtitulo{
+    font-size: 1.5rem;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: var(--terciaria);
+    font-weight: bold;
+    margin: 20px;
+}
+
+/*Formatações Sessões*/
+
+.titulos{
+    font-size: 2rem;
+    color:var(--terciaria);
+
+}
+
+/*Formatações Sessão-Sobre Mim*/
+
+.sobre{
+    padding: 3rem 2rem;
+
+}
+
+#sobrecaixa{
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: var(--fundo);
+}
+
+#sobreparagrafo{
+    font-size: 18px;
+
+}
+
+/*Formatações Sessões- Formação*/
+
+.formacao{
+    padding: 3rem 2rem;
+
+}
+
+.itensformacao{
+    list-style: none;
+}
+
+.tituloform{
+    color: var(--text)
+}
+
+#formacaocaixa{
+   padding: 2rem;
+   margin: 0 auto; 
+}
+
+#paragform{
+    font-size: 18px;
+}
+/*Formatações Sessões-Potifolio*/
+
+.portifolio{
+    padding: 3rem 2rem;
+    
+}
+
+.itensprojetos{
+    list-style: none;
+}
+
+#portifoliocaixa{
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#paragrafopotifolio{
+    color: var(--escuro);
+    font-size: 18px;
+}
+
+.projetos{
+    background: var(--fundo);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--text);
+    overflow: hidden;
+
+}
+
+.textprojetos{
+    padding: 1.5rem;
+
+}
+
+.tituloprojetos{
+    color: var(--primaria);
+    font-weight: bold;
+}
+
+.paragrafoprojeto{
+    color: black;
+    line-height: 1.25rem;
+
+}
+
+.projetoimg{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/*Formatações Sessões-Contato*/
+
+.contato{
+    padding: 3rem 2rem;
+    top: 0;
+    right: 0;
+}
+
+.itemctt{
+    display: inline-block;
+    justify-content: right;
+    list-style: none;
+    padding: 50px;
+    text-align: center;
+    color: var(--escuro);
+
+}
+
+#contatocaixa{
+   padding: 2rem;
+   margin: 0 auto;
+}
+
+#paragrafocontato{
+    color: var(--terciaria);
+    font-weight: bold;
+    padding: 2rem;
+    font-size: 18px;
+}
+
+.formulariocontato{
+  max-width: 580px; 
+  margin: 15px;
+  background-color: var(--fundo);
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border: 1px solid ;
+  border-radius: 16px;
+}
+
+.textform{
+    margin-bottom: 1.5rem;
+}
+
+.grupoform{
+    margin-bottom: 0.5rem;
+}
+
+.textform{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid ;
+    outline: none;
+}
+
+.textform:focus{
+    border-color: var(--secundaria);
+    box-shadow: 0 0 10px rgba(79,70,229,0.3);
+}
+
+.botaoform{
+    color: #ffffff;
+    background-color: var(--terciaria);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5 ease;
+
+}
+
+.botaoform:hover{
+    background-color: var(--primaria);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
+
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Bianca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul class="itsmenu">
+                <li>
+                    <a href="#home" class="linkmenu">Home</a>
+                </li>
+                <li>
+                    <a href="#sobremim" class="linkmenu">Sobre Mim</a>
+                </li>
+                <li>
+                    <a href="#formacao" class="linkmenu">Formação</a>
+                </li>
+                <li>
+                    <a href="#portifolio" class="linkmenu">Portifólio</a>
+                </li>
+                <li>
+                    <a href="#contato" class="linkmenu">Contato</a>
+                </li>
+            </ul>
+    </nav>
+    </header>
+    <main id="home" class="cabecalho">
+                <img id='perfil' src="imagens/fotoperfil.png" alt="Laura Bianca">
+                <h1>Olá! Sou Laura Bianca.</h1>
+                <p id="subtitulo">Futura desenvolvedora back-end.</p>
+    </main>
+    <section id="sobremim" class="sobre">
+        <div id="sobrecaixa">
+            <h2 class="titulos" >Sobre Mim</h2>
+            <br>
+            <p id="sobreparagrafo">Sou estudante de programação, focada em aprender, evoluir e solucionar problemas. <br>
+            Sou apaixonada por tecnologia, por gatos e bolo &#x1F370;. Amo escrever, ler, cozinhar, jogar e desenhar nas minhas horas vagas. <br>
+            Atualmente estou cursando Análise e Desenvolvimento de Sistemas, com o objetivo principal de me tornar programadora back-end.<br>
+            Desejo explorar oportunidades na área da tecnologia, buscando expandir ainda mais minhas habilidades e contribuir para projetos inovadores.
+            </p>
+        </div>
+    </section>
+    <section id="formacao" class="formacao">
+        <div id="formacaocaixa">
+            <h2 class="titulos">Formação</h2>
+            <br>
+                <ul class="itensformacao">
+                    <li>
+                        <h4 class="tituloform">
+                            FEV/2025-ATUAL - UNINTER
+                        </h4>
+                        <p id="paragform">Análise e Desenvolvimento de Sistemas EAD.</p></li>
+                    <li>
+                        <h4 class="tituloform">
+                            JAN/2023-SET/2023 - KULTIVI
+                        </h4>
+                        <p id="paragform">Inglês Básico.</p>
+                    </li>
+                    <li>
+                        <h4 class="tituloform">
+                            JAN/2024-ABR/2024 - CURSO EM VIDEO
+                        </h4>
+                        <p id="paragform">Lógica de programação e algoritmo.</p>
+                    </li>
+                </ul>
+        </div>
+    </section>
+    <section id="portifolio" class="portifolio">
+        <h2 class="titulos">Meu Portifólio</h2>
+        <div id="portifoliocaixa">
+            <div class="projetos">
+                <img src="imagens/projeto1.png" alt="Projeto 1" class="projetoimg">
+                <div class="textprojetos">
+                    <h3 class="tituloprojetos">Projeto Android</h3>
+                    <p class="paragrafoprojeto">Projeto sobre o mascote android feito durante o curso de HTML5 e CSS3 do Curso em Video.</p>
+                </div>
+            </div>
+            <div class="projetos">
+                <img src="imagens/projeto2.png" alt="Projeto 2" class="projetoimg">
+                <div class="textprojetos">
+                    <h3 class="tituloprojetos">Projeto Tecnologica</h3>
+                    <p class="paragrafoprojeto">Projeto sobre um site sobre tecnologia feito durante a disciplina de Ferramentas de Desenvolvimento Web.</p>
+                </div>
+            </div>
+    </section>
+    <section id="contato" class="contato">
+            <div id="contatocaixa">
+                <h2 class="titulos">Contatos</h2>
+                <ul id="likscontt">
+                    <li class="itemctt"><a href="https://www.linkedin.com/in/laura-bianca-2aa156259/" target="_blank" rel="external"><img src="imagens/linkedin.png" alt="Linkedin"></a> <br>LinkedIn</li>
+                    <li class="itemctt"><a href="https://wa.me/5582987420068" target="_blank" rel="external"><img src="imagens/whatsapp.png" alt="whatsapp"></a> <br>WhatsApp</li>
+                    <li class="itemctt"><a href="https://github.com/llauraaraujo" target="_blank" rel="external"><img src="imagens/github.png" alt="GitHub"></a> <br>GitHub</li>
+                    <li class="itemctt"><a href="lbianca941@gmail.com" target="_blank" rel="external"><img src="imagens/email.png" alt="Email"></a><br> Email </li>
+                </ul>
+            </div>
+            <p id="paragrafocontato">Vamos conversar? Envie-me uma mensagem!</p>
+        <form class="formulariocontato">
+            <div class="grupoform">
+                <label for="nome">Nome</label>
+                <input class="textform" name="nome">
+            </div>
+            <div class="grupoform">
+                <label for="email">Email</label>
+                <input class="textform" type="email" nome="email">
+            </div>
+            <div class="grupoform">
+                <label for="message">Mensagem</label>
+                <textarea class="textform" name="message" maxlenghth="800" style="overflow: hidden; resize: none;"></textarea>
+             </div>           
+            <div>
+                <button type="submit" class="botaoform">ENVIAR</button>
+            </div>
+        </form>
+    </section>
+    
+</body>
+</html>
